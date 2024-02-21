@@ -1,0 +1,49 @@
+/**
+ * For more info about used options: @see https://www.typescriptlang.org/tsconfig
+ */
+ {
+  "compilerOptions": {
+
+    // Project Options
+    "allowJs": true,
+    "checkJs": true,
+    "importHelpers": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "noEmit": true,
+    "plugins": [{"name": "typescript-eslint-language-service"}],
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "esnext",
+
+    // Module Resolution
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "paths": {"@/*": ["*"]},
+    "verbatimModuleSyntax": true,
+
+    // Strict Checks
+    "strict": true,
+    "strictNullChecks": false,
+
+    // Linter Checks
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+
+    // Advanced
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+
+    "types": [
+      "vite/client",
+    ]
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts", "src/**/*.vue", "wagmi.config.ts"]
+}
